@@ -50,9 +50,23 @@ body {
     gap: 10px;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.school-logo {
+    width: clamp(40px, 4vw, 45px);
+    height: clamp(40px, 4vw, 45px);
+    border-radius: 8px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
 .logo-img {
-    width: 50px;
-    height: 50px;
+    width: clamp(45px, 4.5vw, 50px);
+    height: clamp(45px, 4.5vw, 50px);
     border-radius: 8px;
     object-fit: contain;
 }
@@ -184,6 +198,34 @@ body {
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
+}
+
+.hero-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.hero-school-logo {
+    width: 38%;
+    height: 38%;
+    max-width: clamp(60px, 10vw, 75px);
+    max-height: clamp(60px, 10vw, 75px);
+    object-fit: contain;
+    border-radius: 50%;
+    filter: brightness(0) invert(1);
+}
+
+.hero-society-logo {
+    width: 38%;
+    height: 38%;
+    max-width: clamp(60px, 10vw, 75px);
+    max-height: clamp(60px, 10vw, 75px);
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 .hero-logo img {
@@ -760,10 +802,35 @@ body .container .blog-article p {
         height: 45px;
         font-size: 18px;
     }
+    .logo-container {
+        gap: 5px;
+    }
+    
+    .school-logo {
+        width: clamp(30px, 3.5vw, 35px);
+        height: clamp(30px, 3.5vw, 35px);
+    }
+    
+    .logo-img {
+        width: clamp(35px, 4vw, 40px);
+        height: clamp(35px, 4vw, 40px);
+    }
+    
     .hero-logo {
         width: 96px;
         height: 96px;
     }
+    
+    .hero-logo-container {
+        gap: 5px;
+    }
+    
+    .hero-school-logo,
+    .hero-society-logo {
+        max-width: clamp(40px, 8vw, 50px);
+        max-height: clamp(40px, 8vw, 50px);
+    }
+    
     .hero-logo img {
         max-width: 80px;
         max-height: 80px;
